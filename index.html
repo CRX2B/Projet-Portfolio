@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Thomas Jeanne</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Thomas Jeanne Développeur Python</h1>
+        <h1>Thomas Jeanne Développeur</h1>
         <nav>
             <ul>
                 <li><a href="#accueil">Accueil</a></li>
                 <li><a href="#apropos">À propos</a></li>
+                <li><a href="#competences">Compétences</a></li>
                 <li><a href="#projets">Projets</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -22,44 +26,82 @@
     <main>
         <section id="accueil">
             <div class="accueil-content">
-                <div class="texte-accueil">
-                    <h2>Bienvenue sur mon portfolio</h2>
-                    <p>Vous pourrez trouver sur ce site les derniers projets que j'ai réalisés, des informations sur mon parcours,
-                        ainsi qu'un formulaire de contact.</p>
-                </div>
                 <div class="portrait">
                     <img src="images/portrait_thomas.jpg" alt="Portrait Thomas Jeanne" />
                 </div>
+                <div class="texte-accueil">
+                    <h2>Bienvenue sur mon portfolio</h2>
+                    <p>Vous pourrez trouver sur ce site les derniers projets que j'ai réalisés, des informations sur mon parcours,
+                        ainsi qu'un formulaire de contact. <br>
+                    Ce site est mis à jour régulièrement !
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="apropos">
+            <div class="apropos-content">
+                <h2>À propos de moi</h2>
+                <p>Je m'appelle Thomas et je suis développeur junior. Après 20 ans d'expérience dans les secteurs du commerce et du transport, 
+                    j'ai choisi de suivre ma véritable passion en me reconvertissant dans le développement informatique.
+                    Je vous encourage à explorer mes derniers projets et à me contacter pour toute demande ou collaboration. 
+                    Je serais ravi d'échanger avec vous. Bonne lecture !</p>
             </div>
         </section>
 
-        <section id="apropos">
-            <div class="apropos-content">
-                <div class="texte-apropos">
-                    <h2>À propos de moi</h2>
-                    <p>Je m'appelle Thomas et je suis développeur Python junior. Après 20 ans d'expérience dans les secteurs du commerce et du transport, 
-                        j'ai choisi de suivre ma véritable passion en me reconvertissant dans le développement informatique.
-                        Je vous encourage à explorer mes derniers projets et à me contacter pour toute demande ou collaboration. 
-                        Je serais ravi d'échanger avec vous. Bonne lecture !</p>
-                </div>
+        <section id="competences">
+            <div class="competences-content">
+                <h2>Mes compétences</h2>
+                <ul>
+                    <li>Développement de site web (Site vitrine, E-commerce, application web)</li>
+                    <li>Programme basique (automatisation de tâches)</li>
+                    <li>Création et gestion de base de données</li>
+                    <li>Création d'API REST</li>
+                </ul>
             </div>
         </section>
 
         <section id="projets">
-            <h2>Mes projets</h2>
-            <div class="projet">
-                <h3>Projet 1</h3>
-                <p>Description du projet 1</p>
-            </div>
-            <div class="projet">
-                <h3>Projet 2</h3>
-                <p>Description du projet 2</p>
+            <div class="projets-content">
+                <h2>Mes projets</h2>
+                <div class="projet">
+                    <h3>Projet 1</h3>
+                    <p>Description du projet 1...</p>
+                </div>
+                <div class="projet">
+                    <h3>Projet 2</h3>
+                    <p>Description du projet 2...</p>
+                </div>
+                <div class="projet">
+                    <h3>Projet 3</h3>
+                    <p>Description du projet 3...</p>
+                </div>
             </div>
         </section>
 
         <section id="contact">
-            <h2>Contactez-moi</h2>
-            <p>Email : thjbox@gmail.com</p>
+            <div class="contact-content">
+                <h2>Contactez-moi</h2>
+                <form action="mailto:thjbox@gmail.com" method="POST" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="nom">Nom :</label>
+                        <input type="text" id="nom" name="nom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email :</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="sujet">Sujet :</label>
+                        <input type="text" id="sujet" name="sujet" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message :</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit">Envoyer</button>
+                </form>
+            </div>
         </section>
     </main>
 

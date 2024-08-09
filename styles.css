@@ -1,8 +1,11 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Inconsolata', monospace;
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
@@ -12,15 +15,12 @@ header {
     background-size: cover;  
     background-position: center; 
     height: 300px; 
-    color: white; 
     text-align: center; 
     display: flex;
     flex-direction: column;
     justify-content: center; 
     align-items: center; 
 }
-    
-
 
 header h1 {
     margin: 0;
@@ -42,52 +42,26 @@ nav ul li a {
 }
 
 main {
-    padding: 2rem;
+    flex: 1;
+    padding: 20px;
+    padding-bottom: 60px;
 }
 
-
-p {
-    text-align: center;
-    text-align: justify;
-}
-section {
-    margin-bottom: 2rem;
-}
-
-.projet {
-    background-color: #f4f4f4;
-    padding: 1rem;
-    margin-bottom: 1rem;
-}
-
-footer {
-    background-color: #2556a4;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-.accueil-content, .apropos-content {
-    display: flex;
-    align-items: center;
-    gap: 40px;
+.accueil-content, .apropos-content, .competences-content, .projets-content, .contact-content {
     padding: 40px;
     border: 2px solid #333;
     border-radius: 10px;
     margin-bottom: 40px;
 }
 
-.texte-accueil, .texte-apropos {
-    flex: 1;
-    order: 2;
+.accueil-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
 }
 
 .portrait {
     flex-shrink: 0;
-    order: 1;
 }
 
 .portrait img {
@@ -98,13 +72,85 @@ footer {
     border: 3px solid #333;
 }
 
-.apropos-content {
-    padding: 40px;
-    border: 2px solid #333;
-    border-radius: 10px;
-    margin-bottom: 40px;
+.texte-accueil {
+    flex: 1;
 }
 
-.texte-apropos {
+.competences-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.competences-content li {
+    margin-bottom: 10px;
+}
+
+.projet {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.projet h3 {
+    margin-top: 0;
+}
+
+.contact-content form {
+    max-width: 800px;
+    margin: 20px auto 0;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    flex: 0 0 48%;
+}
+
+.form-group.full-width {
+    flex: 0 0 100%;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-group textarea {
+    height: 150px;
+}
+
+button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto 0;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
     width: 100%;
 }
