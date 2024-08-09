@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    color: #fff;
+    padding: 1rem;
+    background-image: url('images/ordinateur_plage.jpg');
+    background-size: cover;  
+    background-position: center; 
+    height: 300px; 
+    color: white; 
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+}
+    
+
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+}
+
+
+p {
+    text-align: center;
+    text-align: justify;
+}
+section {
+    margin-bottom: 2rem;
+}
+
+.projet {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+footer {
+    background-color: #2556a4;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.accueil-content, .apropos-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 40px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.texte-accueil, .texte-apropos {
+    flex: 1;
+    order: 2;
+}
+
+.portrait {
+    flex-shrink: 0;
+    order: 1;
+}
+
+.portrait img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #333;
+}
+
+.apropos-content {
+    padding: 40px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.texte-apropos {
+    width: 100%;
+}
