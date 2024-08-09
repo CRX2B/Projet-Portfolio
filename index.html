@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     <header>
@@ -21,6 +22,17 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <div class="social-links header-social">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <img src="images/icon_facebook.png" alt="Facebook" class="social-icon">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <img src="images/icon_insta.png" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://www.linkedin.com/in/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <img src="images/icon_link.png" alt="LinkedIn" class="social-icon">
+            </a>
+        </div>
     </header>
 
     <main>
@@ -53,7 +65,7 @@
             <div class="competences-content">
                 <h2>Mes compétences</h2>
                 <ul>
-                    <li>Développement de site web (Site vitrine, E-commerce, application web)</li>
+                    <li>Développement de site web en HTML/CSS (Site vitrine, E-commerce, application web)</li>
                     <li>Programme basique (automatisation de tâches)</li>
                     <li>Création et gestion de base de données</li>
                     <li>Création d'API REST</li>
@@ -83,19 +95,27 @@
             <div class="contact-content">
                 <h2>Contactez-moi</h2>
                 <form action="mailto:thjbox@gmail.com" method="POST" enctype="text/plain">
-                    <div class="form-group">
-                        <label for="nom">Nom :</label>
-                        <input type="text" id="nom" name="nom" required>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="prenom">Prénom :</label>
+                            <input type="text" id="prenom" name="prenom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="nom">Nom :</label>
+                            <input type="text" id="nom" name="nom" required>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="email">Email :</label>
-                        <input type="email" id="email" name="email" required>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email :</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="sujet">Sujet :</label>
+                            <input type="text" id="sujet" name="sujet" required>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="sujet">Sujet :</label>
-                        <input type="text" id="sujet" name="sujet" required>
-                    </div>
-                    <div class="form-group">
+                    <div class="form-group full-width">
                         <label for="message">Message :</label>
                         <textarea id="message" name="message" required></textarea>
                     </div>
@@ -106,6 +126,17 @@
     </main>
 
     <footer>
+        <div class="social-links footer-social">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <img src="images/icon_facebook.png" alt="Facebook" class="social-icon">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <img src="images/icon_insta.png" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://www.linkedin.com/in/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <img src="images/icon_link.png" alt="LinkedIn" class="social-icon">
+            </a>
+        </div>
         <p>&copy; 2024 Thomas Jeanne. Tous droits réservés.</p>
     </footer>
 </body>

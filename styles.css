@@ -15,30 +15,51 @@ header {
     background-size: cover;  
     background-position: center; 
     height: 300px; 
-    text-align: center; 
     display: flex;
     flex-direction: column;
     justify-content: center; 
-    align-items: center; 
+    align-items: center;
+    position: relative;
+    text-align: center;
 }
 
 header h1 {
-    margin: 0;
+    margin-bottom: 1rem;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 10px;
+    margin: 0 10px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
+}
+
+.header-social {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+/* Media query pour les écrans plus petits */
+@media screen and (max-width: 768px) {
+    header {
+        padding-top: 60px; /* Espace pour les icônes sociales */
+    }
+
+    .header-social {
+        top: 10px;
+        right: 10px;
+    }
 }
 
 main {
@@ -150,7 +171,104 @@ button[type="submit"]:hover {
 footer {
     background-color: #333;
     color: #fff;
-    text-align: center;
     padding: 1rem;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.social-links a:hover .social-icon {
+    opacity: 0.7;
+}
+
+/* Styles pour les tablettes et petits écrans d'ordinateur */
+@media screen and (max-width: 1024px) {
+    .accueil-content, .apropos-content, .competences-content, .projets-content, .contact-content {
+        padding: 30px;
+    }
+
+    .contact-content form {
+        max-width: 100%;
+    }
+}
+
+/* Styles pour les tablettes en mode portrait et grands smartphones */
+@media screen and (max-width: 768px) {
+    header {
+        height: auto;
+        padding: 20px;
+    }
+
+    .header-social {
+        position: static;
+        margin-top: 20px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 5px 10px;
+    }
+
+    .accueil-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .portrait {
+        margin-bottom: 20px;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .form-group {
+        flex: 0 0 100%;
+        margin-bottom: 15px;
+    }
+}
+
+/* Styles pour les smartphones */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    .accueil-content, .apropos-content, .competences-content, .projets-content, .contact-content {
+        padding: 20px;
+    }
+
+    .portrait img {
+        width: 150px;
+        height: 150px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-social {
+        margin-bottom: 10px;
+    }
 }
