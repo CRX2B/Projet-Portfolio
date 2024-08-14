@@ -6,7 +6,6 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Assure que le body prend au moins toute la hauteur de la fenêtre */
-    
 }
 
 header {
@@ -197,7 +196,6 @@ footer {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap; /* Permet aux éléments de passer à la ligne sur les petits écrans */
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Ombre pour le footer */
 }
 
 .social-links {
